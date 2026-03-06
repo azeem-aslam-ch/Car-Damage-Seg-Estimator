@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+*.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# YOLO / Model weights (large binary files — too big for GitHub)
+*.pt
+*.onnx
+*.engine
+runs/
+
+# Entire data directory (images, raw data, dataset files — large)
+car_damage_seg_estimator/data/dataset/
+car_damage_seg_estimator/data/raw/
+car_damage_seg_estimator/data/weights/
+car_damage_seg_estimator/data/outputs/
+car_damage_seg_estimator/data/reports/
+
+# Extra temp files generated during dev
+cv_content.txt
+update_cv.py
+*.log
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

@@ -1,0 +1,39 @@
+# Severity Rules Configuration
+# Thresholds based on damage_area_percent (mask pixels / image pixels * 100)
+# Edit these values to tune severity classification without code changes.
+
+scratch:
+  low:
+    max: 0.3
+  medium:
+    min: 0.3
+    max: 1.0
+  high:
+    min: 1.0
+
+dent:
+  low:
+    max: 0.5
+  medium:
+    min: 0.5
+    max: 1.5
+  high:
+    min: 1.5
+
+peel_paint:
+  low:
+    max: 0.4
+  medium:
+    min: 0.4
+    max: 1.2
+  high:
+    min: 1.2
+
+broken:
+  low:
+    max: 0.2
+  medium:
+    min: 0.2
+    max: 0.8
+  high:
+    min: 0.8
