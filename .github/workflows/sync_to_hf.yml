@@ -25,10 +25,11 @@ jobs:
           
           cd hf_space
           git init
+          git branch -M main
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
           
           git add .
           git commit -m "Deploy from GitHub Actions"
           
-          git push -f https://azeemaslam:$HF_TOKEN@huggingface.co/spaces/azeemaslam/car-damage-api HEAD:main
+          git push -f https://azeemaslam:$HF_TOKEN@huggingface.co/spaces/azeemaslam/car-damage-api main
