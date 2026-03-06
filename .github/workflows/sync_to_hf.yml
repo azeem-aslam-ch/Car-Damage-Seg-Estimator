@@ -31,4 +31,4 @@ jobs:
           git add .
           git commit -m "Deploy from GitHub Actions"
           
-          git push -f https://azeemaslam:$HF_TOKEN@huggingface.co/spaces/azeemaslam/car-damage-api main
+          git push -f https://azeemaslam:$HF_TOKEN@huggingface.co/spaces/azeemaslam/car-damage-api HEAD:main
